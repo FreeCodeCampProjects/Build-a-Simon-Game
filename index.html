@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Simon Memory Game</title>
+
+    <!-- Meta Data -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="John Martin">
+    <meta name="description" content="A 'Simon' memory game — as part of a FreeCodeCamp track.">
+    <meta name="keywords" content="simon, memory, game, freecodecamp">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/animate.css/3.5.2/animate.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+
+    <!-- HUD -->
+    <table class="hud">
+        <tr>
+            <td>
+                <button class="ui-btn power-btn" id="power-btn"><i class="fa fa-power-off" aria-hidden="true"></i> start</button>
+                <button class="ui-btn" id="restart-btn"><i class="fa fa-refresh" aria-hidden="true"></i> restart</button>
+                <button class="ui-btn" id="strict-btn"><i class="fa fa-toggle-off" aria-hidden="true"></i> strict</button>
+                <button class="ui-btn" id="share-btn"><i class="fa fa-share-alt" aria-hidden="true"></i> share</button>
+                <br>
+            <td>
+                <h1 id="score" class="output-score">0 / 20</h1>
+    </table>
+
+    <!-- Title & Subtitle -->
+    <h1 id="output-turn" class="output-turn">&nbsp;</h1>
+    <h2 id="output-feedback" class="output-feedback">&nbsp;<br></h2><br>
+    
+    <!-- Container -->
+    <div class="container" id="container">
+        <div class="bezel"></div><br>
+    </div>
+
+    <!-- Output divs -->
+    <div id="output-counter"></div>
+    <div id="output-computer-sequence"></div>
+    <div id="output-player-sequence"></div>
+
+    <!-- JavaScripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="js/2-app.js"></script>
+    <script src="js/3-modules.js"></script>
+    <script src="js/4-init.js"></script>
+    <script src="js/createAudio.js"></script>
+    <script src="js/createGameboard.js"></script>
+    <script src="js/createListeners.js"></script>
+    <script src="js/1-globals.js"></script>
+    <script src="js/gameplay.js"></script>
+    <script src="js/wellDoneAnimation.js"></script>
+    
+    <!-- Audio elements -->
+</body>
+</html>

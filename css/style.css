@@ -1,0 +1,153 @@
+.bezel {
+ border-radius: 100%;
+ height: 300px;
+ width: 300px;
+}
+
+.bezel, .front-panel, .game-table {
+  position: absolute;
+}
+
+.bezel, .front-panel, .game-table, .hud {
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  right: 0;
+}
+
+.blue {
+  background-color: #0000FF;
+  border-radius: 0% 0% 100% 0%;
+}
+
+.blue-light {
+  background-color: #00FFFF;
+}
+
+body {
+  background-attachment: fixed;
+  background-color: #0C0B0E;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #FFF !important;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+body, .output-score, td {
+  text-align: center;
+}
+
+button {
+  background-color: #0C0b0E;
+  border: 0;
+  margin: 0;
+  outline-color: transparent;
+  outline-style: none;
+}
+
+button, td {
+  padding: 0;
+}
+
+.footer {
+  margin-top: 300px;
+  font-size: 8px;
+}
+
+.front-panel {
+  height: 360px;
+  margin-top: -400px;
+  opacity: 0;
+  width: 300px;
+  z-index: 1;
+}
+
+.front-panel, .red {
+  background-color: #FF0000;
+}
+
+.game-table {
+  height: 285px;
+  margin-top: -11px;
+  width: 285px;
+}
+
+.game-table, td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.green {
+  background-color: #008000;
+  border-radius: 100% 0% 0% 0%;
+}
+
+.green-light {
+  background-color: #00FF00 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+}
+
+.hud {
+  width: 100%;
+}
+
+.hud td {
+  width: 75%;
+}
+
+.key {
+  border: 3px solid #494356;
+  height: 102%;
+  outline-color: transparent;
+  outline-style: none;
+  width: 95%;
+}
+
+.output-score {
+  color: #FFA500;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.output-feedback {
+  font-size: 45px;
+}
+
+.output-turn {
+  font-size: 50px;
+}
+
+.power-btn {
+  background-color: #18161D;
+}
+
+.red {
+  border-radius: 0% 100% 0% 0%;
+}
+
+.red-light {
+  background-color: #FFB6C1;
+}
+
+.ui-btn {
+  border-bottom: 1px dotted #18161D;
+  border-right: 1px solid #18161D;
+  float: left;
+  height: 90px;
+  margin-left: 2px;
+  width: 70px;
+}
+
+.yellow {
+  background-color: #FFFF00;
+  border-radius: 0% 0% 0% 100%;
+}
+
+.yellow-light {
+  background-color: #FFFFE0;
+}
