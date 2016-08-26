@@ -17,7 +17,7 @@
 
 .blue {
   background-color: #0000FF;
-  border-radius: 0% 0% 100% 0%;
+  border-radius: 0 0 100% 0;
 }
 
 .blue-light {
@@ -26,12 +26,18 @@
 
 body {
   background-attachment: fixed;
-  background-color: #0C0B0E;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   color: #FFF !important;
   font-family: 'Open Sans', sans-serif;
+}
+
+body, button {
+  background-color: #0C0B0E;
+}
+
+body, h1, h2, h3, h4, h5, h6, .output-score {
   font-weight: 300;
 }
 
@@ -40,7 +46,6 @@ body, .output-score, td {
 }
 
 button {
-  background-color: #0C0b0E;
   border: 0;
   margin: 0;
   outline-color: transparent;
@@ -81,15 +86,11 @@ button, td {
 
 .green {
   background-color: #008000;
-  border-radius: 100% 0% 0% 0%;
+  border-radius: 100% 0 0 0;
 }
 
 .green-light {
   background-color: #00FF00 !important;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 300;
 }
 
 .hud {
@@ -111,7 +112,6 @@ h1, h2, h3, h4, h5, h6 {
 .output-score {
   color: #FFA500;
   font-size: 30px;
-  font-weight: 300;
 }
 
 .output-feedback {
@@ -127,7 +127,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .red {
-  border-radius: 0% 100% 0% 0%;
+  border-radius: 0 100% 0 0;
 }
 
 .red-light {
@@ -145,7 +145,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .yellow {
   background-color: #FFFF00;
-  border-radius: 0% 0% 0% 100%;
+  border-radius: 0 0 0 100%;
 }
 
 .yellow-light {
