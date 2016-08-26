@@ -29,19 +29,21 @@ CONFIG = {
     },
     MODE: {
       STRICT: {
-        ENABLED: 'Strict mode enabled',
-        DISABLED: 'Strict mode disabled'
+        ENABLED: 'Strict is enabled, so let us reshuffle the current sequence',
+        DISABLED: 'Strict is disabled, so let us retry the current sequence in order'
       }
     },
     SHARE: 'SHARE function',
     VICTORY: 'you win!',
-    SUCCESS: 'success!',
+    SUCCESS: 'Success!',
     WELL_DONE: 'well done!',
-    FAILURE: 'failure.',
+    FAILURE: 'Failure.',
     TRY_AGAIN: 'try again!',
     CONGRATULATIONS: 'congratulations!',
     RESTARTING: 'restarting',
-    HERE_WE_GO_AGAIN: 'here we go again'
+    HERE_WE_GO_AGAIN: 'here we go again',
+    MISMATCHED: ' Player mismatched on key ',
+    MATCHED_ALL: ' Player matched all '
   },
   STYLES: {
     COLS: {
@@ -53,7 +55,7 @@ CONFIG = {
     }
   },
   KEY_COLOURS: ['green', 'yellow', 'blue', 'red'],
-  SCORE_TO_WIN: 2
+  SCORE_TO_WIN: 20
 };
 
 /* ( X ) "scores" is used for managing the score

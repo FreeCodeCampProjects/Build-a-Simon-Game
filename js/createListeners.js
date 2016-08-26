@@ -3,7 +3,7 @@
 *************************************************/
 
 logKeyPressSuccess = function(color) {
-  console.log(CONFIG.SYSTEM_MSG.SUCCESS + ' Player matched all ' + scores.counter + ' keys');
+  console.log(CONFIG.SYSTEM_MSG.SUCCESS + CONFIG.SYSTEM_MSG.MATCHED_ALL + scores.counter + ' keys');
   wellDoneAnimation();
   scores.counter++;
   scores.score++;
@@ -26,7 +26,7 @@ logKeyPressSuccess = function(color) {
 *************************************************/
 
 logKeyPressFailure = function(color) {
-  console.log(CONFIG.SYSTEM_MSG.FAILURE + ' Player mismatched on key ' + scores.counter);
+  console.log(CONFIG.SYSTEM_MSG.FAILURE + CONFIG.SYSTEM_MSG.MISMATCHED + scores.counter);
   gameScreen.outputFeedback(CONFIG.SYSTEM_MSG.TRY_AGAIN, '#FF0000');
   $('#sound-' + color)[0].pause();
   $('#sound-' + color)[0].currentTime = 0;
@@ -37,10 +37,10 @@ logKeyPressFailure = function(color) {
     appState.sequences.player = [];
     setTimeout(function() {
       if (!appState.strictMode) {
-        console.log('Strict is disabled, so let us retry the current sequence');
+        console.log(CONFIG.SYSTEM_MSG.MODE.STRICT.DISABLED);
         playSequence();
       } else {
-        console.log('Strict is enabled, so let us reshuffle the current sequence');
+        console.log(CONFIG.SYSTEM_MSG.MODE.STRICT.ENABLED);
         appState.sequences.computer = modules.shuffleArr(appState.sequences.computer);
         playSequence();
       }

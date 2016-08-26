@@ -6,6 +6,7 @@
 
 gameScreen = {
     init: function() {
+        $(elemOutputScore).html('0 / ' + CONFIG.SCORE_TO_WIN);
         if (!appState.playerTurn) {
             computerTurn();
         } else {
